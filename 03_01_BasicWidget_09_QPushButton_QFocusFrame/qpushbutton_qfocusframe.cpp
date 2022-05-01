@@ -1,5 +1,5 @@
 #include "qpushbutton_qfocusframe.h"
-#include <QTWidgets/QPushButton>
+#include <QtWidgets/QPushButton>
 #include <QFocusFrame>
 
 QPushButton_QFocusFrame::QPushButton_QFocusFrame(QWidget *parent)
