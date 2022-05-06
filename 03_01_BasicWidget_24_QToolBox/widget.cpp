@@ -4,7 +4,7 @@ Widget::Widget(QWidget *parent)
     : QWidget(parent)
 {
     box = new QToolBox(this);
-    lay = new QVBoxLayout(this);
+    lay = new QHBoxLayout(this);
 
     btn[0] = new QPushButton("DataBase - 1", this);
     btn[1] = new QPushButton("Network - 2", this);
