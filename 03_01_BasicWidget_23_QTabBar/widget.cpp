@@ -7,7 +7,7 @@ Widget::Widget(QWidget *parent)
     tab->addTab("Browser");
     tab->addTab("User");
     tab->addTab("Application");
-    tab->setShape(QTabBar::RoundedNorth);
+    tab->setShape(QTabBar::TriangularWest);
     tab->setGeometry(20, 20, 300, 250);
     tab->setTabTextColor(1, QColor(255,0,0));
     connect(tab,SIGNAL(currentChanged(int)),this,SLOT(currentTab(int)));
