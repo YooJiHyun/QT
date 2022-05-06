@@ -3,6 +3,8 @@
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
 {
+    setFixedSize(500,300);
+
     QToolBar *toolbar = new QToolBar(this);
 
     QAction *act[5];
