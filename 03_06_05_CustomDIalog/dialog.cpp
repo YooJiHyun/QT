@@ -14,8 +14,8 @@ Dialog::Dialog(QWidget *parent)
 
     QHBoxLayout *hlay2 = new QHBoxLayout();
 
-//    connect(okbtn, &QPushButton::clicked, this, &Dialog::slot_okbtn);
-//    connect(cancelbtn, &QPushButton::clicked, this, &Dialog::slot_cancelbtn);
+    connect(okbtn, &QPushButton::clicked, this, &Dialog::slot_okbtn);
+    connect(cancelbtn, &QPushButton::clicked, this, &Dialog::slot_cancelbtn);
     hlay2->addWidget(okbtn);
     hlay2->addWidget(cancelbtn);
 
@@ -36,10 +36,11 @@ Dialog::~Dialog()
 
 void Dialog::slot_okbtn()
 {
-    emit accepted();
+    qDebug("ok");
+    emit accept();
 }
 
 void Dialog::slot_cancelbtn()
 {
-    emit rejected();
+    emit reject();
 }
